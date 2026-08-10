@@ -1,0 +1,6 @@
+[project]
+name = "logcatcher"
+version = "1.0.0"
+description = "Logging module!"
+requires-python = ">=3.9"
+license = { text = "MIT" }
