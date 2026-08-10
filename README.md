@@ -15,9 +15,8 @@ A simple and lightweight Python library for capturing, storing, and managing log
 
 ## Installation
 
-Install from PIP:
+Install from PyPI:
 
-```bash```
 ```pip install logcatcher```
 
 ## Functions
@@ -34,4 +33,4 @@ Install from PIP:
 
 - ```logcatcher.clear_memory()``` : Clears the memory.
 
-- ```logcatcher.clear_logfile()```
+- ```logcatcher.clear_logfile()``` : Clears the logfile.
