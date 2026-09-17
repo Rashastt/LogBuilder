@@ -1,5 +1,8 @@
 # LogCatcher
 
+## Current version: 1.1.0
+[Changelog](CHANGELOG.md)
+
 A simple and lightweight Python library for capturing, storing, and managing logs.
 
 ## Features

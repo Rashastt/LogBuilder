@@ -12,6 +12,7 @@ config = {
     "save_exception": True,
     "create_on_exception": False,
     "create_logfile": False,
+    "exception_type": None,
     "logfile_path": "",
     "manual_save": True
 }
@@ -68,13 +69,26 @@ def save():
 
     logs.clear()
 
-def log(message):
+def log(message, type):
     log_entry = ""
+
+    if type is None:
+        type_entry = None
+    elif type == "info":
+        type_entry = "[INFO]"
+    elif type == "warn":
+        type_entry = "[WARNING]"
+    elif type == "error":
+        type_entry = "[ERROR]"
+    else:
+        raise ValueError(
+            f"{datetime.datetime.now()} LogCatcher: Invalid type!"
+        )
 
     if config["save_dateandtime"]:
         log_entry += f"[{datetime.datetime.now()}] "
 
-    log_entry += message
+    log_entry += (type_entry if type_entry is not None else "") + (" " if type_entry is not None else "") + message
 
     if config["save_exception"]:
         tb = traceback.format_exc()
@@ -133,10 +147,13 @@ def exception_handler(exc_type, exc_value, exc_traceback):
         )
     )
 
-    log(error)
-
     if config["manual_save"]:
         save()
+    else:
+        log(error, config["exception_type"])
+
     
 sys.excepthook = exception_handler
+
+
 

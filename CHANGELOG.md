@@ -4,6 +4,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.0] - 2026-17-09
+
+### Added
+- Added log type parameter to ```logcatcher.log()```. 
+Yipe!!
+- Added new ```exception_type``` configuration option.
+
 ## [1.0.2] - 2026-10-08
 
 ### Added
