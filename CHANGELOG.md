@@ -4,10 +4,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.1] - 2026-19-09
+
+### Changed
+- Changed a default setting so it does not give an error.
+
 ## [1.1.0] - 2026-17-09
 
 ### Added
-- Added log type parameter to ```logcatcher.log()```. 
+- Added log type parameter to ```LogBuilder.log()```. 
 Yipe!!
 - Added new ```exception_type``` configuration option.
 

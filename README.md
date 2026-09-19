@@ -1,9 +1,9 @@
-# LogCatcher
+# LogBuilder
 
-## Current version: 1.1.0
+## Current version: 1.1.1
 [Changelog](CHANGELOG.md)
 
-A simple and lightweight Python library for capturing, storing, and managing logs.
+A simple and lightweight Python library for building, storing, and managing logs.
 
 ## Features
 
@@ -20,20 +20,20 @@ A simple and lightweight Python library for capturing, storing, and managing log
 
 Install from PyPI:
 
-```pip install logcatcher```
+```pip install LogBuilder```
 
 ## Functions
 
-- ```logcatcher.setup()``` : Setups  LogCatcher with your customized configurations.
+- ```LogBuilder.setup()``` : Setups LogBuilder with your customized configurations.
 
-- ```logcatcher.log()``` :  Logs an customized input. Saves to the memory instead if ```manual_save``` is ```True```.
+- ```LogBuilder.log()``` :  Logs an customized input. Saves to the memory instead if ```manual_save``` is ```True```.
 
-- ```logcatcher.save()``` : Saves the memory logs to the file.
+- ```LogBuilder.save()``` : Saves the memory logs to the file.
 
-- ```logcatcher.current_conf()``` : Shows the current configuration in a JSON format.
+- ```LogBuilder.current_conf()``` : Shows the current configuration in a JSON format.
 
-- ```logcatcher.clear()``` : Clears the logs or the file depending on the configurations. If ```manual_save``` is ```True```, then it clears the memory. If it's ```False```, it clears the file.
+- ```LogBuilder.clear()``` : Clears the logs or the file depending on the configurations. If ```manual_save``` is ```True```, then it clears the memory. If it's ```False```, it clears the file.
 
-- ```logcatcher.clear_memory()``` : Clears the memory.
+- ```LogBuilder.clear_memory()``` : Clears the memory.
 
-- ```logcatcher.clear_logfile()``` : Clears the logfile.
+- ```LogBuilder.clear_logfile()``` : Clears the logfile.
